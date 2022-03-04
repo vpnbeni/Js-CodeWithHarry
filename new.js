@@ -335,33 +335,32 @@ class Programmer extends Employee {
   rohan =new Programmer('Rohan',3,"Lays",'Go',"Rohan420");
   console.log(rohan);
   console.log(rohan.favoriteLanguage());
-  */
-// let input = "";
-// process.stdin.on("data", function (chunk) {
+  // let input = "";
+  // process.stdin.on("data", function (chunk) {
 //   input = input + chunk;
 // });
 // process.stdin.on("end", function () {
-//   input = input.split("/n");
-//   let T=parseInt(input[0]);
-//   for (let K = 1; K < =input[0]; K++) {
-//     const e = input[K];
-//     console.log(52%e);
-//     }
+  //   input = input.split("/n");
+  //   let T=parseInt(input[0]);
+  //   for (let K = 1; K < =input[0]; K++) {
+    //     const e = input[K];
+    //     console.log(52%e);
+    //     }
 //   // console.log(input);
 // });
 // let input = "";
 // process.stdin.on("data", function (chunk) {
-//   input = input + chunk;
-// });
+  //   input = input + chunk;
+  // });
 // process.stdin.on("end", function () {
-//   input = input.split("\n");
-//   let x=parseInt(input[0]);
-//   let y=parseInt(input[1]);
-//   if (x%5===0 && y>x ) {
-//     y=y-x-0.50;
-//     console.log(y.toFixed(2));
-//   }
-//   else{
+  //   input = input.split("\n");
+  //   let x=parseInt(input[0]);
+  //   let y=parseInt(input[1]);
+  //   if (x%5===0 && y>x ) {
+    //     y=y-x-0.50;
+    //     console.log(y.toFixed(2));
+    //   }
+    //   else{
 //     console.log(y.toFixed(2));
 //   }
 // });
@@ -375,49 +374,49 @@ class library {
     console.log(this.books);
   }
   // issueBook(bookName, user) {
-  //   // let User = {
-  //   //   userName: "",
-  //   //   bookIssued: [],
-  //   // };
-  //   let libraryUsers = localStorage.getItem("libraryUsers");
-  //   let userObj;
-  //   if (libraryUsers == null) {
-  //     userObj = [];
-  //   } else {
+    //   // let User = {
+      //   //   userName: "",
+      //   //   bookIssued: [],
+      //   // };
+      //   let libraryUsers = localStorage.getItem("libraryUsers");
+      //   let userObj;
+      //   if (libraryUsers == null) {
+        //     userObj = [];
+        //   } else {
   //     userObj = JSON.parse(libraryUsers);
   //   }
   //   console.log(userObj.filter((e) => e.issueBook===bookName));
   //   if (this.books.includes(bookName) ) {
-  //     let User = {
-  //       userName: user,
-  //       bookIssued: [bookName],
-  //     };
-  //     if ((userObj.filter((e) => e.userName === user).length >0)) {
-  //       userObj.filter((e) => e.userName === user)[0].bookIssued.push(bookName);
-  //     } else {
-  //       userObj.push(User);
+    //     let User = {
+      //       userName: user,
+      //       bookIssued: [bookName],
+      //     };
+      //     if ((userObj.filter((e) => e.userName === user).length >0)) {
+        //       userObj.filter((e) => e.userName === user)[0].bookIssued.push(bookName);
+        //     } else {
+          //       userObj.push(User);
   //     }
-
+  
   //     localStorage.setItem("libraryUsers", JSON.stringify(userObj));
   //   } else {
-  //     console.log(
-  //       `The book ${this.bookName} is either not in library or it is already issued`
-  //     );
-  //   }
-  // }
-
-  //if user name and book name are same than dont issue
-  //if the book is not in library than dont issue it
-  //if user name is same but book is different than issue the book and keep the record in array of issued books
-  //if user is different and book is same than issue the book
-
-  issueBook(bookName, user) {
-    if (this.books.includes(bookName)) {
-      let User = {
-        userName: user,
-        bookIssued: [bookName],
-      };
-      let libraryUsers = localStorage.getItem("libraryUsers");
+    //     console.log(
+      //       `The book ${this.bookName} is either not in library or it is already issued`
+      //     );
+      //   }
+      // }
+      
+      //if user name and book name are same than dont issue
+      //if the book is not in library than dont issue it
+      //if user name is same but book is different than issue the book and keep the record in array of issued books
+      //if user is different and book is same than issue the book
+      
+      issueBook(bookName, user) {
+        if (this.books.includes(bookName)) {
+          let User = {
+            userName: user,
+            bookIssued: [bookName],
+          };
+          let libraryUsers = localStorage.getItem("libraryUsers");
       let userObj;
       if (libraryUsers == null) {
         userObj = [];
@@ -449,7 +448,7 @@ class library {
       } else {
         userObj = JSON.parse(libraryUsers);
       }
-
+      
       if (userObj.filter((e) => e.userName === user).length > 0) {
         if (userObj.filter((e) => e.bookIssued.includes(bookName)).length > 0) {
           let userBook = userObj.find((e) => e.userName === user).bookIssued;
@@ -477,20 +476,166 @@ sarswati = new library(
   `Rich Dad Poor Dad`,
   `Mathematics`,
   `Physics`
-);
-// console.log(sarswati);
+  );
+  // console.log(sarswati);
+  
+  //Testing area  =>
+  
+  // let asdf=[];
+  // let bookNamez = {
+    //   book1:`The Rudest Book Ever`,
+    //   book2:`Subtal Art Of Not Giving A F*ck!`,
+    //   book3: [1,2 ,3,'Name'],
+    //   book4:`Mathematics`,
+    //   book5:`Physics`
+    // };
+    // asdf.push(bookNamez);
+    // asdf.find(e=>e[`book2`]).book3.push(`No`)
+    // console.log(asdf.find(e=>e[`book2`]).book3);
+    
+    console.log(`tut 34`);
+    setTimeout(() => {
+  for (let i = 0; i < 400; i++) {
+    const element = i;
+    console.log();
+  }
+}, 100);
 
-//Testing area  =>
 
-// let asdf=[];
-// let bookNamez = {
-//   book1:`The Rudest Book Ever`,
-//   book2:`Subtal Art Of Not Giving A F*ck!`,
-//   book3: [1,2 ,3,'Name'],
-//   book4:`Mathematics`,
-//   book5:`Physics`
-// };
-// asdf.push(bookNamez);
-// asdf.find(e=>e[`book2`]).book3.push(`No`)
-// console.log(asdf.find(e=>e[`book2`]).book3);
- 
+console.log("Ajex tut");
+let fetchBtn = document.getElementById("fetchBtn");
+fetchBtn.addEventListener("click", buttonClickHandler);
+function buttonClickHandler() {
+  console.log("You have clicked the fetchBtn");
+  //Instantiate an xhr object
+  const xhr = new XMLHttpRequest();
+  //open the object
+  // xhr.open("GET", "harry.txt", true);
+  // use this for post request
+  xhr.open("POST", "http://dummy.restapiexample.com/api/v1/create", true);
+  xhr.getResponseHeader("Content-type", "application/json");
+  // what to do on progress(optional)
+  xhr.onprogress = function () {
+    console.log("On progress");
+  };
+  // what to do when reponse is ready
+  xhr.onload = function () {
+    if (this.status == 200) {
+      console.log(this.responseText);
+    } else {
+      console.log("Some error occured");
+    }
+  };
+  // send the request
+  param = `{"name":"test","salary":"123","age":"23"}`;
+  xhr.send(param);
+}
+
+let popBtn = document.getElementById("popHandler");
+popBtn.addEventListener("click", popHandler);
+function popHandler() {
+  console.log("You have clicked the popBtn");
+  //Instantiate an xhr object
+  const xhr = new XMLHttpRequest();
+  //open the object
+  xhr.open("GET", "http://dummy.restapiexample.com/api/v1/employees", true);
+  
+  // what to do on progress(optional)
+  xhr.onprogress = function () {
+    console.log("On progress");
+  };
+  // what to do when reponse is ready
+  xhr.onload = function () {
+    if (this.status == 200) {
+      let obj = JSON.parse(this.responseText).data;
+      console.log(obj);
+      let list = document.getElementById("list");
+      str = "";
+      for (key in obj) {
+        str += `<li>${obj[key].employee_name}</li>`;
+      }
+      list.innerHTML = str;
+    } else {
+      console.log("Some error occured");
+    }
+  };
+
+  xhr.send();
+  console.log("We are done here");
+}
+
+*/
+
+// Exercise for Ajex
+
+console.log("Quiz for Ajex");
+let getName = document.getElementById("getName");
+getName.addEventListener("click", getEmployeeHandlr);
+function getEmployeeHandlr() {
+  const xhr = new XMLHttpRequest();
+  xhr.open("GET", "http://dummy.restapiexample.com/api/v1/employees", true);
+  xhr.onprogress = function () {
+  //   let getEmployeeHandlr = document.getElementById("getEmployeeHandlr");
+  //   let str = `<div class="spinner-border" role="status">
+  //   <span class="sr-only"></span>
+  // </div>`;
+  //   getEmployeeHandlr.innerHTML = str;
+  console.log('in Porgress');
+  };
+  xhr.onload = function () {
+    if (this.status == 200) {
+      let obj = JSON.parse(this.responseText).data;
+      console.log(obj);
+      let list = document.getElementById("listName");
+      str = "";
+      for (key in obj) {
+        str += `
+              <tr>
+                <th scope="row">${Number(key)+1}</th>
+                <th scope="row">${obj[key].employee_name}</th>
+              </tr>`;
+      }
+      list.innerHTML = str;
+    } else {
+      console.log("Some error occured");
+    }
+  };
+
+  xhr.send();
+  console.log("We are done here");
+}
+let getSalary = document.getElementById("getSalary");
+getSalary.addEventListener("click", getEmployeeSalaryHandlr);
+function getEmployeeSalaryHandlr() {
+  const xhr = new XMLHttpRequest();
+  xhr.open("GET", "http://dummy.restapiexample.com/api/v1/employees", true);
+  xhr.onprogress = function () {
+  //   let getEmployeeHandlr = document.getElementById("getEmployeeHandlr");
+  //   let str = `<div class="spinner-border" role="status">
+  //   <span class="sr-only"></span>
+  // </div>`;
+  //   getEmployeeHandlr.innerHTML = str;
+  console.log('in Porgress');
+  };
+  xhr.onload = function () {
+    if (this.status == 200) {
+      let obj = JSON.parse(this.responseText).data;
+      console.log(obj);
+      let list = document.getElementById("listSalary");
+      str = "";
+      for (key in obj) {
+        str += `
+              <tr>
+                
+                <th scope="row">${obj[key].employee_salary}</th>
+              </tr>`;
+      }
+      list.innerHTML = str;
+    } else {
+      console.log("Some error occured");
+    }
+  };
+
+  xhr.send();
+  console.log("We are done here");
+}
