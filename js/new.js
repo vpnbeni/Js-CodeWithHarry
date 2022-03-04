@@ -564,7 +564,6 @@ function popHandler() {
   console.log("We are done here");
 }
 
-*/
 
 // Exercise for Ajex
 
@@ -575,12 +574,12 @@ function getEmployeeHandlr() {
   const xhr = new XMLHttpRequest();
   xhr.open("GET", "http://dummy.restapiexample.com/api/v1/employees", true);
   xhr.onprogress = function () {
-  //   let getEmployeeHandlr = document.getElementById("getEmployeeHandlr");
-  //   let str = `<div class="spinner-border" role="status">
-  //   <span class="sr-only"></span>
-  // </div>`;
-  //   getEmployeeHandlr.innerHTML = str;
-  console.log('in Porgress');
+    //   let getEmployeeHandlr = document.getElementById("getEmployeeHandlr");
+    //   let str = `<div class="spinner-border" role="status">
+    //   <span class="sr-only"></span>
+    // </div>`;
+    //   getEmployeeHandlr.innerHTML = str;
+    console.log("in Porgress");
   };
   xhr.onload = function () {
     if (this.status == 200) {
@@ -590,10 +589,10 @@ function getEmployeeHandlr() {
       str = "";
       for (key in obj) {
         str += `
-              <tr>
-                <th scope="row">${Number(key)+1}</th>
-                <th scope="row">${obj[key].employee_name}</th>
-              </tr>`;
+        <tr>
+        <th scope="row">${Number(key) + 1}</th>
+        <th scope="row">${obj[key].employee_name}</th>
+        </tr>`;
       }
       list.innerHTML = str;
     } else {
@@ -610,12 +609,12 @@ function getEmployeeSalaryHandlr() {
   const xhr = new XMLHttpRequest();
   xhr.open("GET", "http://dummy.restapiexample.com/api/v1/employees", true);
   xhr.onprogress = function () {
-  //   let getEmployeeHandlr = document.getElementById("getEmployeeHandlr");
-  //   let str = `<div class="spinner-border" role="status">
-  //   <span class="sr-only"></span>
-  // </div>`;
-  //   getEmployeeHandlr.innerHTML = str;
-  console.log('in Porgress');
+    //   let getEmployeeHandlr = document.getElementById("getEmployeeHandlr");
+    //   let str = `<div class="spinner-border" role="status">
+    //   <span class="sr-only"></span>
+    // </div>`;
+    //   getEmployeeHandlr.innerHTML = str;
+    console.log("in Porgress");
   };
   xhr.onload = function () {
     if (this.status == 200) {
@@ -625,17 +624,19 @@ function getEmployeeSalaryHandlr() {
       str = "";
       for (key in obj) {
         str += `
-              <tr>
-                
-                <th scope="row">${obj[key].employee_salary}</th>
-              </tr>`;
+        <tr>
+        
+        <th scope="row">${obj[key].employee_salary}</th>
+        </tr>`;
       }
       list.innerHTML = str;
     } else {
       console.log("Some error occured");
     }
   };
-
+  
   xhr.send();
   console.log("We are done here");
 }
+
+*/
