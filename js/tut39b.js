@@ -35,3 +35,4 @@ enrollStudent(newStudent)
     console.log("Some error occured");
   });
 // getStudent();
+  
